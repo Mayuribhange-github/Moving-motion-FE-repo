@@ -21,6 +21,8 @@ import History from "./components/History";
 import ForgetPassword from "./components/ForgetPassword";
 import Otp from "./components/Otp";
 import PaymentForm from "./components/Payment";
+import MotionSensor from "./components/motionSensor";
+import LiveMap from "./components/liveMap";
 
 export default function App() {
   return (
@@ -134,6 +136,8 @@ export default function App() {
             </div>
           }
         />
+        <Route path="/motion" element={<MotionSensor />} />
+        <Route path="/live-map" element={<LiveMap />} />
       </Routes>
       <Footer />
     </>

@@ -65,10 +65,7 @@ export default function AttachVehicleForm() {
     data.set("vehicleNumber", vehicleNumber);
     data.set("driverId", user._id);
     try {
-      let response = await WebService.postApi(
-        "http://localhost:6000" + WebApi.ATTACH_VEHICLE,
-        data
-      );
+      let response = await WebService.postApi(WebApi.ATTACH_VEHICLE, data);
       if (response.data.status) {
         dispatch(setMessage("Vehicle Add SuccessFully"));
         dispatch(setAttachDetail(response.data.result));

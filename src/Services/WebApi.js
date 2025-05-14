@@ -10,4 +10,5 @@ export default {
   COMPLETE_ORDERS: "/booking/complete-orders",
   USER_UPDATE: "/user/update",
   CANCEL_ORDER: "/booking/cancel-order",
+  NAVIGATION : '/navigation'
 };
